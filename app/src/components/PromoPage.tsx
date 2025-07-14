@@ -150,7 +150,7 @@ const PromoPage: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.5, duration: 0.8 }}
                                 >
-                                    You've unlocked access to our exclusive event collection.
+                                    You&apos;ve unlocked access to our exclusive event collection.
                                     Register now to receive early access to limited drops,
                                     special discounts, and exclusive member-only releases.
                                 </motion.p>
@@ -245,7 +245,7 @@ const PromoPage: React.FC = () => {
                                     transition={{ duration: 0.6 }}
                                 >
                                     <div className="text-4xl md:text-6xl mb-4">🎉</div>
-                                    <h3 className="text-2xl md:text-3xl font-bold text-black">You're In!</h3>
+                                    <h3 className="text-2xl md:text-3xl font-bold text-black">You&apos;re In!</h3>
                                     <p className="text-lg md:text-xl text-black/85">
                                         Welcome to Adidas Exclusives. Check your email for confirmation
                                         and your exclusive member benefits.
