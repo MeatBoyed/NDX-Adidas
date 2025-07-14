@@ -10,6 +10,7 @@ import { GameService } from '@/lib/services';
 import { User, Prize } from '@/lib/types';
 import BrandingFooter from './BrandingFooter';
 import { useRouter } from 'next/navigation';
+import Footer from './Footer';
 
 interface GamePageProps {
     user: User;
@@ -259,7 +260,7 @@ const GamePage: React.FC<GamePageProps> = ({
             )}
 
             {/* Footer */}
-            <motion.div
+            {/* <motion.div
                 className="glossy-white text-black p-4 mt-16"
                 variants={sectionVariants}
             >
@@ -272,7 +273,8 @@ const GamePage: React.FC<GamePageProps> = ({
                     <p className="font-medium">© 2025 Adidas. This is a prototype demonstration.</p>
                     <p className="mt-1">Terms and conditions apply. Prizes are simulated for demo purposes.</p>
                 </motion.div>
-            </motion.div>
+            </motion.div> */}
+            <Footer />
             <BrandingFooter />
         </motion.div>
     );
