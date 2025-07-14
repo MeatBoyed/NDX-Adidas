@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import AdidasLogo from './AdidasLogo';
 import { Prize } from '@/lib/types';

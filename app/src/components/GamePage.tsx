@@ -9,6 +9,7 @@ import PrizeModal from './PrizeModal';
 import { GameService } from '@/lib/services';
 import { User, Prize } from '@/lib/types';
 import BrandingFooter from './BrandingFooter';
+import { useRouter } from 'next/router';
 
 interface GamePageProps {
     user: User;
@@ -29,6 +30,7 @@ const GamePage: React.FC<GamePageProps> = ({
     const [prize, setPrize] = useState<Prize | null>(initialPrize);
     const [hasPlayedGame, setHasPlayedGame] = useState(initialHasPlayedGame);
     const [showModal, setShowModal] = useState(false);
+    const router = useRouter();
 
     const handleCardClick = (cardNumber: number) => {
         if (hasPlayedGame || selectedCard !== null) return;
@@ -46,6 +48,7 @@ const GamePage: React.FC<GamePageProps> = ({
 
     const handleCloseModal = () => {
         setShowModal(false);
+        router.push("/promo")
     };
 
     const handlePlayAgain = () => {

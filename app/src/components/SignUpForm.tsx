@@ -8,7 +8,7 @@ import { motion, Variants } from 'framer-motion';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent, CardDescription, CardHeader } from './ui/card';
 import AdidasLogo from './AdidasLogo';
 import { User } from '@/lib/types';
 

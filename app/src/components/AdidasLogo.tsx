@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion, Variants } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 interface AdidasLogoProps {
@@ -16,6 +15,7 @@ const AdidasLogo: React.FC<AdidasLogoProps> = ({
 
     return (
         <img src="/logo.svg"
+            alt="Adidas Logo"
             className={cn("max-w-28 h-full", className)} />
     );
 };
