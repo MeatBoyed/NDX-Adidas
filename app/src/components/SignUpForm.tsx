@@ -80,7 +80,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
 
     return (
         <motion.div
-            className="min-h-screen animated-bg flex items-center justify-center p-4"
+            className="max-h-screen animated-bg flex items-center justify-center p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -100,15 +100,15 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                             <AdidasLogo size="xl" className="text-black" animated={true} />
                         </motion.div>
                         <motion.div variants={itemVariants}>
-                            <CardTitle className="text-3xl font-bold text-shimmer mb-2">
+                            {/* <CardTitle className="text-3xl font-bold text-shimmer mb-2">
                                 Join AdiClub
-                            </CardTitle>
+                            </CardTitle> */}
                             <CardDescription className="text-gray-600 text-base">
                                 Sign up to unlock exclusive rewards and play our card game
                             </CardDescription>
                         </motion.div>
                     </CardHeader>
-                    <CardContent className="pt-4">
+                    <CardContent className="">
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                             <motion.div
                                 className="space-y-2"
@@ -129,8 +129,8 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                                         onFocus={() => setFocusedField('fullName')}
                                         onBlur={() => setFocusedField(null)}
                                         className={`transition-all duration-300 ${errors.fullName
-                                                ? 'border-red-500 focus:border-red-500'
-                                                : 'focus:border-black focus:ring-1 focus:ring-black'
+                                            ? 'border-red-500 focus:border-red-500'
+                                            : 'focus:border-black focus:ring-1 focus:ring-black'
                                             }`}
                                     />
                                 </motion.div>
@@ -165,8 +165,8 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                                         onFocus={() => setFocusedField('surname')}
                                         onBlur={() => setFocusedField(null)}
                                         className={`transition-all duration-300 ${errors.surname
-                                                ? 'border-red-500 focus:border-red-500'
-                                                : 'focus:border-black focus:ring-1 focus:ring-black'
+                                            ? 'border-red-500 focus:border-red-500'
+                                            : 'focus:border-black focus:ring-1 focus:ring-black'
                                             }`}
                                     />
                                 </motion.div>
@@ -201,8 +201,8 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                                         onFocus={() => setFocusedField('email')}
                                         onBlur={() => setFocusedField(null)}
                                         className={`transition-all duration-300 ${errors.email
-                                                ? 'border-red-500 focus:border-red-500'
-                                                : 'focus:border-black focus:ring-1 focus:ring-black'
+                                            ? 'border-red-500 focus:border-red-500'
+                                            : 'focus:border-black focus:ring-1 focus:ring-black'
                                             }`}
                                     />
                                 </motion.div>
@@ -237,8 +237,8 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                                         onFocus={() => setFocusedField('phone')}
                                         onBlur={() => setFocusedField(null)}
                                         className={`transition-all duration-300 ${errors.phone
-                                                ? 'border-red-500 focus:border-red-500'
-                                                : 'focus:border-black focus:ring-1 focus:ring-black'
+                                            ? 'border-red-500 focus:border-red-500'
+                                            : 'focus:border-black focus:ring-1 focus:ring-black'
                                             }`}
                                     />
                                 </motion.div>
@@ -271,7 +271,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                                                     Signing Up...
                                                 </span>
                                             ) : (
-                                                'Join AdiClub & Play'
+                                                'Signup to Play & Win'
                                             )}
                                         </span>
                                         <motion.div
