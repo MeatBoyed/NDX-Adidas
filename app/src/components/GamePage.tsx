@@ -49,6 +49,7 @@ const GamePage: React.FC<GamePageProps> = ({
 
     const handleCloseModal = () => {
         setShowModal(false);
+        onResetGame();
         router.push("/promo")
     };
 
