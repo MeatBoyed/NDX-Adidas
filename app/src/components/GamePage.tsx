@@ -8,6 +8,7 @@ import CardGrid from './CardGrid';
 import PrizeModal from './PrizeModal';
 import { GameService } from '@/lib/services';
 import { User, Prize } from '@/lib/types';
+import BrandingFooter from './BrandingFooter';
 
 interface GamePageProps {
     user: User;
@@ -97,7 +98,7 @@ const GamePage: React.FC<GamePageProps> = ({
         >
             {/* Header */}
             <motion.div
-                className="glossy-white text-black p-4 shadow-lg"
+                className="glossy-white text-black p-4 shadow-lg "
                 variants={sectionVariants}
             >
                 <div className="max-w-4xl mx-auto flex items-center justify-between">
@@ -107,16 +108,16 @@ const GamePage: React.FC<GamePageProps> = ({
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.6 }}
                     >
-                        <AdidasLogo size="md" className="text-black" animated={true} />
+                        <AdidasLogo size="md" className="text-black max-w-16" animated={true} />
                         <div>
-                            <motion.h1
+                            {/* <motion.h1
                                 className="text-xl font-bold text-shimmer"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                             >
-                                AdiClub Rewards
-                            </motion.h1>
+                                 Rewards
+                            </motion.h1> */}
                             <motion.p
                                 className="text-sm text-gray-600"
                                 initial={{ opacity: 0 }}
@@ -151,7 +152,7 @@ const GamePage: React.FC<GamePageProps> = ({
 
             {/* Main Game Area */}
             <motion.div
-                className="max-w-4xl mx-auto p-8"
+                className="max-w-4xl mx-auto pt-4 p-2"
                 variants={sectionVariants}
             >
                 <motion.div
@@ -161,7 +162,7 @@ const GamePage: React.FC<GamePageProps> = ({
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
                     <motion.h2
-                        className="text-4xl font-bold mb-4 text-shimmer-white"
+                        className="text-4xl font-bold mb-4 text-black"
                         animate={{
                             textShadow: [
                                 "0 0 10px rgba(255,255,255,0.3)",
@@ -179,20 +180,20 @@ const GamePage: React.FC<GamePageProps> = ({
                     </motion.h2>
                     {!hasPlayedGame ? (
                         <motion.p
-                            className="text-gray-300 mb-6 text-lg"
+                            className="text-black/80 mb-6 text-lg"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6, duration: 0.6 }}
                         >
-                            Select one card to reveal your prize. You have a{' '}
+                            Select one card to have a change of winning {' '}
                             <motion.span
-                                className="font-bold text-white"
+                                className="font-bold text-black"
                                 animate={{ scale: [1, 1.1, 1] }}
                                 transition={{ duration: 2, repeat: Infinity }}
                             >
-                                75% chance
+                                our vouchers and prizes.
                             </motion.span>{' '}
-                            of winning something amazing!
+                            {/* of winning something amazing! */}
                         </motion.p>
                     ) : (
                         <motion.p
@@ -265,10 +266,11 @@ const GamePage: React.FC<GamePageProps> = ({
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 0.6 }}
                 >
-                    <p className="font-medium">© 2025 adidas AdiClub. This is a prototype demonstration.</p>
+                    <p className="font-medium">© 2025 Adidas. This is a prototype demonstration.</p>
                     <p className="mt-1">Terms and conditions apply. Prizes are simulated for demo purposes.</p>
                 </motion.div>
             </motion.div>
+            <BrandingFooter />
         </motion.div>
     );
 };

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import AdidasLogo from './AdidasLogo';
 import { Prize } from '@/lib/types';
+import AdidasOfficialLogo from './AdidasOfficialLogo';
 
 interface GameCardProps {
     cardNumber: number;
@@ -73,7 +74,15 @@ const GameCard: React.FC<GameCardProps> = ({
                             type: "spring"
                         }}
                     >
-                        <AdidasLogo size="lg" className="text-white mb-2" animated={true} />
+                        {/* <AdidasLogo size="lg" className="text-white fill-white bg-white" animated={true} /> */}
+                        {/* <AdidasOfficialLogo className="text-white fill-white bg-white" /> */}
+                        <AdidasOfficialLogo
+                            stripeColor="white"
+                            textColor="white"
+                            className="w-20 h-20"
+                        />
+
+
                     </motion.div>
                     <motion.div
                         className="text-white text-center"
@@ -84,8 +93,8 @@ const GameCard: React.FC<GameCardProps> = ({
                             duration: 0.4
                         }}
                     >
-                        <p className="text-xs font-bold text-shimmer-white">AdiClub</p>
-                        <p className="text-xs">Rewards</p>
+                        <p className="text-xs font-bold text-shimmer-white">Adidas</p>
+                        <p className="text-xs">vouchers</p>
                     </motion.div>
 
                     {/* Pulsing border effect */}

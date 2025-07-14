@@ -236,7 +236,7 @@ const PromoPage: React.FC = () => {
                             variants={productVariants}
                             whileHover={{ scale: 1.02 }}
                         >
-                            <h3 className="text-3xl font-bold mb-4 text-shimmer">AdiClub Members</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-shimmer"> Members</h3>
                             <p className="text-xl mb-6 text-gray-600">Free shipping on orders over $100</p>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Button className="glossy-black text-white hover:opacity-80 button-press ripple">

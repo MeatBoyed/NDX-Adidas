@@ -101,7 +101,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSignUp }) => {
                         </motion.div>
                         <motion.div variants={itemVariants}>
                             {/* <CardTitle className="text-3xl font-bold text-shimmer mb-2">
-                                Join AdiClub
+                                Join 
                             </CardTitle> */}
                             <CardDescription className="text-gray-600 text-base">
                                 Sign up to unlock exclusive rewards and play our card game
