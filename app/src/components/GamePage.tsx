@@ -9,7 +9,7 @@ import PrizeModal from './PrizeModal';
 import { GameService } from '@/lib/services';
 import { User, Prize } from '@/lib/types';
 import BrandingFooter from './BrandingFooter';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 interface GamePageProps {
     user: User;

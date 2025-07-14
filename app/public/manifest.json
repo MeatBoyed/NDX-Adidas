@@ -1,0 +1,58 @@
+{
+    "name": "Adidas Exclusives - Premium Athletic Collection",
+    "short_name": "Adidas Exclusives",
+    "description": "Discover exclusive Adidas collection featuring premium athletic wear, limited edition sneakers, and cutting-edge sportswear. Impossible is Nothing.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/logo.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/logo.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ],
+    "categories": [
+        "sports",
+        "shopping",
+        "lifestyle"
+    ],
+    "lang": "en",
+    "dir": "ltr",
+    "scope": "/",
+    "shortcuts": [
+        {
+            "name": "Shop Sneakers",
+            "short_name": "Sneakers",
+            "description": "Browse our exclusive sneaker collection",
+            "url": "/sneakers",
+            "icons": [
+                {
+                    "src": "/logo.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "New Releases",
+            "short_name": "New",
+            "description": "Check out the latest releases",
+            "url": "/new",
+            "icons": [
+                {
+                    "src": "/logo.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ]
+}
